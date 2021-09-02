@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package udem.edu.co.peaje;
+package udem.edu.co.peaje.interfaces;
 
 /**
  *
  * @author Cristian Avila
  */
-public class Parcial {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public interface Vehiculos {
+    
+    /*
+    Metodo que permite saber que el vehiculo es terrestre
+    */
+    public void terrestre();
+    
+    public String toString();
     
 }
