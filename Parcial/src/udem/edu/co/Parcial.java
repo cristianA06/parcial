@@ -22,10 +22,7 @@ public class Parcial {
         // TODO code application logic here
         
         ArrayList<Vehiculos> lista = new ArrayList<>();
-        
-        lista.add(new Camion("tpo-213", "chevrolet", 2));
-        
-        System.out.println(lista.get(0).toString());
+
     }
     
 }
