@@ -22,12 +22,22 @@ public class Moto extends Otros{
 
     @Override
     public void terrestre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public String toString() {
-        return "soy una moto con placa " +super.getPlaca()+ " y debo pagar de peaje " + valorPeaje ;
+        String aux = "{\"Moto\":\n"
+                + "    {\"valorPeaje\":\n"
+                + "        \""+this.valorPeaje+"\",\n"
+                + "        \"placa\":\n"
+                + "        \""+super.getPlaca()+"\",\n"
+                + "        \"marca\":\n"
+                + "        \""+super.getPlaca()+"\"\n"
+                + "    }\n"
+                + "}";
+        
+        return "soy una moto con placa " +super.getPlaca()+ " y debo pagar de peaje " + valorPeaje +"\n"+aux;
     }
     
     

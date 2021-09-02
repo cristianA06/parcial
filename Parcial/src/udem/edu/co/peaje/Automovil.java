@@ -11,26 +11,33 @@ import udem.edu.co.peaje.abstrat.Otros;
  *
  * @author Cristian Avila
  */
-public class Automovil extends Otros{
+public class Automovil extends Otros {
 
     private double valorPeaje;
-    
+
     public Automovil(String placa, String marca) {
         super(placa, marca);
         this.valorPeaje = 20000;
     }
 
-    
     @Override
     public void terrestre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public String toString() {
-        return "soy un automovil con placa " +super.getPlaca()+ " y debo pagar de peaje " + valorPeaje ;
+
+        String aux = "{\"Automovil\":\n"
+                + "    {\"valorPeaje\":\n"
+                + "        \""+this.valorPeaje+"\",\n"
+                + "        \"placa\":\n"
+                + "        \""+super.getPlaca()+"\",\n"
+                + "        \"marca\":\n"
+                + "        \""+super.getPlaca()+"\"\n"
+                + "    }\n"
+                + "}";
+        return "soy un automovil con placa " + super.getPlaca() + " y debo pagar de peaje " + valorPeaje + "\n" + aux;
     }
 
-    
-    
 }
